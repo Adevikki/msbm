@@ -202,7 +202,7 @@ class _DashBoard extends State<DashBoard> {
                                         Text(
                                           _ratingValue != null
                                               ? _ratingValue.toString()
-                                              : 'Rate it!',
+                                              : '0.0',
                                           style: TextStyle(
                                             color:
                                                 Colors.orange.withOpacity(0.7),

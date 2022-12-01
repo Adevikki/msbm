@@ -2,18 +2,19 @@
 
 class AppData {
   static List<String> categories = [
-    "Fidelity Bank",
-    "First Bank of Nigeria",
-    "GTBank",
-    "OPay digital services limited",
-    "Sterling Bank",
-    "Wema Bank",
-    "Ecobank",
-    "Heritage Bank",
-    "Access Bank",
-    "Access Diamond",
-    "KUDA Microfinance Bank",
-    "United Bank of Africa",
+    "Development",
+    "Finance & Accounting",
+    "Office Productivity",
+    "Design",
+    "Lifestyle",
+    "Health & Fitness",
+    "Teaching",
+    "Business",
+    "IT & Software",
+    "Personal Development",
+    "Marketing",
+    "Photography & Video",
+    "Music",
   ];
 
   static List<String> myCourses = [

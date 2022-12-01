@@ -12,14 +12,18 @@ class Categories extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 8,
           crossAxisSpacing: 1,
-          mainAxisExtent: 100,
+          mainAxisExtent: 150,
         ),
         itemCount: items.length,
         shrinkWrap: true,
         itemBuilder: (context, index) {
           final chipItem = items[index];
-          return ChipWidget(
-            text: chipItem,
+          return Wrap(
+            children: [
+              ChipWidget(
+                text: chipItem,
+              ),
+            ],
           );
         });
   }
@@ -36,10 +40,13 @@ class ChipWidget extends StatelessWidget {
     return Column(
       children: [
         FilterChip(
-          label: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
+          label: SizedBox(
+            width: double.infinity,
+            child: Text(
+              text,
+              style: const TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
           shape: const StadiumBorder(side: BorderSide(color: Colors.white)),
